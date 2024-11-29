@@ -1,15 +1,19 @@
-on:
-push:
-branches:
-      - master  
-    jobs:
-    build:
+ on:
+  push:
+    branches:
+      - test
+
+
+
+
+
+jobs:
+  build:
     runs-on: ubuntu-latest
 
     steps:
-    - name: 'Testing Github action'
-    run: pwd
+      - name: 'youssef'
+        run: pwd
 
-    - name: 'Testing Printing'
-    run: echo youssef
-    env:  
+      - name: "Testing Printing"
+        run: echo youssef
