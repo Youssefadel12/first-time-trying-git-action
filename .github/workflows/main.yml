@@ -13,3 +13,5 @@ branches:
 
     - name: 'Testing Printing'
     run: echo youssef
+    env:  
+  DOCKER_TOKEN: ${{ secrets.DOCKER_TOKEN }}
