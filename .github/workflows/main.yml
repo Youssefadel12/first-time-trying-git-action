@@ -1,8 +1,7 @@
 on:
 push:
 branches:
-      - master
-       
+      - master  
     jobs:
     build:
     runs-on: ubuntu-latest
@@ -14,4 +13,3 @@ branches:
     - name: 'Testing Printing'
     run: echo youssef
     env:  
-  DOCKER_TOKEN: ${{ secrets.DOCKER_TOKEN }}
