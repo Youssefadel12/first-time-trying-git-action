@@ -1,9 +1,9 @@
-FROM openjdk
-  
-WORKDIR /application
+FROM openjdk  
 
-COPY youssef.java .
+WORKDIR /application  
 
-RUN javac youssef.java
+COPY youssef.java .  
 
-CMD java youssef
+RUN javac youssef.java  
+
+CMD ["java", "youssef"]
