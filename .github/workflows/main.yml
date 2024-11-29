@@ -1,19 +1,15 @@
- on:
-  push:
-    branches:
-      - test
+on:  
+  push:  
+    branches:  
+      - master  
 
+jobs:  
+  build:  
+    runs-on: ubuntu-latest  
 
-
-
-
-jobs:
-  build:
-    runs-on: ubuntu-latest
-
-    steps:
-      - name: 'youssef'
-        run: pwd
-
-      - name: "Testing Printing"
+    steps:  
+      - name: 'Print Working Directory'  
+        run: pwd  
+        
+      - name: "Testing Printing"  
         run: echo youssef
