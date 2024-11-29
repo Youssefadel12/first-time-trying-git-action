@@ -8,8 +8,7 @@ jobs:
     runs-on: ubuntu-latest  
 
     steps:  
-      - name: 'Print Working Directory'  
-        run: pwd  
-        
-      - name: "Testing Printing"  
-        run: echo youssef
+      - uses: actions/checkout@v3
+      
+      - name: "login to docker hub"
+      run: docker login --username youssefadl --password dckr_pat_JGV1EmBq5JnKvHfpPMpBewhN5mk
